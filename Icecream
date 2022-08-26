@@ -1,0 +1,11 @@
+public class Icecream {
+  public void place() {
+    System.out.println("This ice cream is delicious!");
+  }
+
+
+
+
+
+
+}
