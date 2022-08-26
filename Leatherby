@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class Leatherby extends Icecream {
+
+String name;
+
+public Leatherby(String name){
+    this.name = name;
+  } 
+
+public void IceCreamShopChoice() {
+ 
+Scanner scan = new Scanner(System.in);
+
+    System.out.println("Welcome to Leatherby's Family Creamery! Which flavor do you want? \n Please select a flavor:\n");
+                               
+     System.out.println("1) NICOLE'S PEANUT BUTTER CUP\n"
++ "Description: Mounds of Chocolate ice cream atop Chocolate Cake, homemade Hot Fudge, and topped off with our delicious homemade Peanut Butter topping.");
+     System.out.println();
+        
+     System.out.println("2) RACHEL’S LARGE SUNDAE\n"
++ "Description: Served with Vanilla ice cream and your choice of one topping: Marshmallow, Strawberries, Pineapple, Raspberries, or our own homemade Caramel, Chocolate, Hot Fudge or Creamy Peanut Butter Topping.");
+     System.out.println();  
+
+    System.out.println("3) JOE’S DISH\n"
++ "Description: It’s a Mountain of Ice Cream! Choice of up to 3 flavors.");
+     System.out.println();     
+        
+     System.out.println("4) PAUL'S ROYAL RASPBERRY FUDGE\n"
++ "Description: Delicious Vanilla ice cream, Chocolate Cake and our homemade Hot Fudge, topped off with red Raspberries.");
+     System.out.println();                       
+   
+    int selection = scan.nextInt();
+    switch(selection) {
+      case 1: System.out.println("You picked the best option!  You deserve to have some fries with that!");
+      break;
+      case 2: System.out.println("This option is good too!  You can have some fries with this!");
+      break;
+      case 3: System.out.println("I hope you have a bunch of family or friends to help you with eating this!  It is huge!");
+      break;
+      case 4: System.out.println("I haven't tried this one yet, but it sounds good!");
+      break;    
+    }
+scan.close();
+}
+
+@Override
+  public void place(){
+  System.out.println(this.name + " usually has a lot of different dine-in options! Really big and delicious ice cream topped with whipped cream and a cherry!");
+  }
+
+}
