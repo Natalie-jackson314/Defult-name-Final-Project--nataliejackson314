@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class Farr extends Icecream {
+
+String name;
+
+public Farr(String name){
+    this.name = name;
+  }
+
+public void IceCreamShopChoice() {
+ Scanner s = new Scanner(System.in);
+  
+   System.out.println("Welcome to Farr Better Ice Cream! Which flavor do you want? \n Please select a flavor:\n");
+                               
+   System.out.println("1) Bubble Gum\n"
++ "Description: Blast from the past! You’ll enjoy this Bubble Gum flavor that’ll remind you of your childhood chewing gum, but even better!");  
+   System.out.println(); 
+        
+   System.out.println("2) Moose Tracks\n"
++ "Description: The combination of vanilla ice cream, peanut butter cups, and Moose Tracks fudge will make this an instant family favorite.");  
+   System.out.println();   
+        
+   System.out.println("3) Cream Cheese Black Raspberry\n"
++ "Our Cream Cheese Ice Cream with Black Raspberry Ripple is a delectable blend of creamy ice cream and sweet black raspberries. You’ll love every spoonful!");
+   System.out.println();            
+                    
+    int decision = s.nextInt();
+    switch(decision) {
+      case 1: System.out.println("Here is your Bubble Gum ice cream! Chewing gum noises!");
+      break;
+      case 2: System.out.println("Here is your Moose Tracks! This is Yummy!");
+      break;
+      case 3: System.out.println("Here is your Cream Cheese Black Raspberry! Sounds fruity!");
+      break;
+        }
+  s.close();
+    }
+
+  
+@Override
+  public void place(){
+    System.out.println(this.name + " usually has a lot of different options for scoops!");
+  }
+
+}
